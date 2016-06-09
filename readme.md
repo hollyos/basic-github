@@ -45,17 +45,24 @@ Basic steps to follow when getting your team set up on GitHub work flow.
   git commit -m "your commit message"
   ```
 
-5. Push changes to `origin` (your repo)
+5. Switch branches to `master` then merge `<yourBranch>` to `master`
 
   ```
-  git push origin <yourBranch>
+  git checkout master
+  git merge <yourBranch>
   ```
 
-6. Submit pull request to `upstream`. Utilize the GUI on GitHub in your repo.
+6. Push changes to `origin` (your repo)
 
-7. Pull Requests should be reviewed and approved by at least 2 members to ensure quality. Utilize the comments to gain team approvals.
+  ```
+  git push origin master
+  ```
 
-8. Once team members agree code is up to snuff the repo owner/admin can merge the pull request (utilize the GUI).
+7. Submit pull request to `upstream`. Utilize the GUI on GitHub in your repo.
+
+8. Pull Requests should be reviewed and approved by at least 2 members to ensure quality. Utilize the comments to gain team approvals.
+
+9. Once team members agree code is up to snuff the repo owner/admin can merge the pull request (utilize the GUI).
 
 ## Contributors
 

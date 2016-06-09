@@ -1020,33 +1020,68 @@ body .markdown-body
 <h2 id="getting-started"><a name="user-content-getting-started" href="#getting-started" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Getting Started</h2>
 <h3 id="local-setup"><a name="user-content-local-setup" href="#local-setup" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Local Setup</h3>
 <ol>
-<li>Fork repo</li>
-<li>Clone down <em>your</em> repo and <code>cd</code> to directory</li>
-<li>Set up upstream branch and verify <code>upstream</code> was created<br />
+<li>
+<p>Fork repo</p>
+</li>
+<li>
+<p>Clone down <em>your</em> repo and <code>cd</code> to directory</p>
+</li>
+<li>
+<p>Set up upstream branch and verify <code>upstream</code> was created</p>
+</li>
+</ol>
 <pre><code>git remote add upstream &lt;main repo link (https or ssh)&gt;
 git remote -v
-</code></pre></li>
-</ol>
+</code></pre>
+
 <h3 id="work-flow"><a name="user-content-work-flow" href="#work-flow" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Work Flow</h3>
 <ol>
-<li>Work in feature branches. To create a branch use the -b modifier. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Documentation on branching &amp; merging</a>.<br />
+<li>Work in feature branches. To create a branch use the -b modifier. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Documentation on branching &amp; merging</a>.</li>
+</ol>
 <pre><code>git checkout -b &lt;yourBranch&gt;
-</code></pre></li>
-<li>Add changes<br />
+</code></pre>
+
+<ol>
+<li>Add changes</li>
+</ol>
 <pre><code>git add -A
-</code></pre></li>
-<li>Pull most recent changes from <code>upstream</code><br />
+</code></pre>
+
+<ol>
+<li>Pull most recent changes from <code>upstream</code></li>
+</ol>
 <pre><code>git pull upstream &lt;yourBranch&gt;
-</code></pre></li>
-<li>Commit changes<br />
+</code></pre>
+
+<ol>
+<li>Commit changes</li>
+</ol>
 <pre><code>git commit -m &quot;your commit message&quot;
-</code></pre></li>
-<li>Push changes to <code>origin</code> (your repo)<br />
-<pre><code>git push origin &lt;yourBranch&gt;
-</code></pre></li>
-<li>Submit pull request to <code>upstream</code>. Utilize the GUI on GitHub in your repo.</li>
-<li>Pull Requests should be reviewed and approved by at least 2 members to ensure quality. Utilize the comments to gain team approvals.</li>
-<li>Once team members agree code is up to snuff the repo owner/admin can merge the pull request (utilize the GUI).</li>
+</code></pre>
+
+<ol>
+<li>Switch branches to <code>master</code> then merge <code>&lt;yourBranch&gt;</code> to <code>master</code></li>
+</ol>
+<pre><code>git checkout master
+git merge &lt;yourBranch&gt;
+</code></pre>
+
+<ol>
+<li>Push changes to <code>origin</code> (your repo)</li>
+</ol>
+<pre><code>git push origin master
+</code></pre>
+
+<ol>
+<li>
+<p>Submit pull request to <code>upstream</code>. Utilize the GUI on GitHub in your repo.</p>
+</li>
+<li>
+<p>Pull Requests should be reviewed and approved by at least 2 members to ensure quality. Utilize the comments to gain team approvals.</p>
+</li>
+<li>
+<p>Once team members agree code is up to snuff the repo owner/admin can merge the pull request (utilize the GUI).</p>
+</li>
 </ol>
 <h2 id="contributors"><a name="user-content-contributors" href="#contributors" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Contributors</h2>
 <p><a href="https://github.com/badwolf7">Holly Springsteen</a></p></article></body></html>

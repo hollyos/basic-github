@@ -58,7 +58,7 @@ Basic steps to follow when getting your team set up on GitHub work flow.
   git pull upstream master
   ```
 
-5. Commit your merge and pull
+5. If there are changes commit your the changes from your pull
 
   ```
   git commit -m "your commit message"

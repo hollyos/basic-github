@@ -9,8 +9,11 @@ Basic steps to follow when getting your team set up on GitHub work flow.
 ### Local Setup
 
 1. Fork repo
+
 2. Clone down _your_ repo and `cd` to directory
+
 3. Set up upstream branch and verify `upstream` was created
+
   ```
   git remote add upstream <main repo link (https or ssh)>
   git remote -v
